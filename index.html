@@ -2,48 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Mogi Framework - fast and free</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="css/dark.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Demartino Marco</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <script src="js/style.js"></script>
 </head>
+
+
+<div class="fixedbutton">
+<label class="switch" data-checked="Yes" data-unchecked="No">
+  <input type="checkbox" id="checkbox" checked onclick="updateTheme()" >
+  <span class="slider round"></span>
+</label>
+</div>
 <body>
-<div id="container">
-    <div id="main">
-        <h1 id="title">Demartino Marco</h1>
-        <p id="subtitle">Programmatore italiano</p>
+     
+      <div class="header clearfix sticky" style="height: 60px;">
+       <div class="header__content boxed">
+       <div class="header__logo__img" style="margin: 10px;">
+           <img src="img/logo.png" alt="" width="40px" height="40px;">
+       </div>
+        <div class="header__logo logo" style="margin-left: 0px;"><a href="#"><h3>Mogi</h3></a></div>
+    </div>
+    </div>
 
-        <div class="row">
-            <div class="column">
-                <div class="image_container"><img src="images/java.png" class="image"></div>
-
-                <h2 class="section_title">Java</h2>
-                <p class="text">Studio Java da olte un anno ed oggi mi ritrovo ad usarlo quotidianamente per i mie
-                    progetti.</p>
-            </div>
-            <div class="column">
-                <div class="image_container"><img src="images/unity.png" class="image"></div>
-                <h2 class="section_title">Unity</h2>
-                <p class="text">Da breve ho cominciato a "giocare" e divertirmi con questo motore grafico.<br>E' sempre
-                    stato un
-                    mio sogno quello di poter creare dei giochi.</p>
-            </div>
-            <div class="column">
-                <div class="image_container"><img src="images/minecraft.png" class="image"></div>
-                <h2 class="section_title">Minecraft</h2>
-                <p class="text">E' stato proprio questo gioco a portarmi nel mondo della programmazione. Me ne sono
-                    appassionato
-                    all'età di 9 anni ed oggi, a 7 anni di distanza, mi ritrovo a creare plugin per i server multiplayer
-                    di
-                    Minecraft.</p>
-            </div>
+<div class="cover parallax" style="height:20%; background-image: url('img/bg.jpg');">
+		<div class="cover__filter"></div>
+		<div class="cover__caption">
+			<div class="cover__caption__copy white-text"> 
+				<h1>Demartino Marco</h1>
+				<h3>Programmatore Italiano</h3> <br>
+			</div>
+		</div>
+	</div>
+ <div class="cards clearfix">
+        <div class="cards__card shadow">
+        <img src="img/java.jpg" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Java</h1>
+            <p>Studio Java da olte un anno ed oggi mi ritrovo ad usarlo quotidianamente per i miei progetti.</p>
+        </div>
+        </div>
+    <div class="cards__card shadow">
+        <img src="img/unity.jpg" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Unity</h1>
+            <p>Da breve ho cominciato a "giocare" e divertirmi con questo motore grafico.
+E' sempre stato un mio sogno quello di poter creare dei giochi.</p>
+        </div>
+        </div>
+        
+    <div class="cards__card shadow">
+        <img src="img/minecraft.jpg" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Minecraft</h1>
+            <p>E' stato proprio questo gioco a portarmi nel mondo della programmazione. Me ne sono appassionato all'età di 9 anni ed oggi, a 7 anni di distanza, mi ritrovo a creare plugin per i server multiplayer di Minecraft.</p>
+        </div>
         </div>
     </div>
-</div>
+    
+   <div class="banner parallax" style="height:15%; background-image: url('img/bg.jpg');">
+       <div class="banner__filter"></div>
+       <div class="banner__caption">
+           <div class="banner__caption__copy white-text">
+               <h1>Il mio Portfolio.</h1>
+           </div>
+       </div>
+   </div>
+              
+ <div class="cards clearfix">
+        <div class="cards__card shadow">
+        <img src="https://source.unsplash.com/category/people/400x260" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, cupiditate consectetur reprehenderit numquam. Ut facere accusamus veniam, repudiandae aut repellendus, fugiat velit! Mollitia quibusdam voluptas rem, suscipit omnis incidunt!</p>
+            <a href="" class="btn medium-white"> Call to action</a>
+        </div>
+        </div>
+    <div class="cards__card shadow">
+        <img src="https://source.unsplash.com/category/people/400x260" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, cupiditate consectetur reprehenderit numquam. Ut facere accusamus veniam, repudiandae aut repellendus, fugiat velit! Mollitia quibusdam voluptas rem, suscipit omnis incidunt!</p>
+            <a href="" class="btn medium-white"> Call to action</a>
+        </div>
+        </div>
+        
+    <div class="cards__card shadow">
+        <img src="https://source.unsplash.com/category/people/400x260" class="cards__card__img">
+        <div class="cards__card__content">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, cupiditate consectetur reprehenderit numquam. Ut facere accusamus veniam, repudiandae aut repellendus, fugiat velit! Mollitia quibusdam voluptas rem, suscipit omnis incidunt!</p>
+            <a href="" class="btn medium-white"> Call to action</a>
+        </div>
+        </div>
+    </div>
 
-<div class="footer">
-    <p>marcodemartino23@gmail.com</p>
-</div>
+              <div class="footer">
+        <div class="footer__content boxed clearfix">
+        <div class="footer__content__left">
+            <p>&copy; Marco Demartino - Design by  <a href="https://twitter.com/mooonmatt"><i class="fas fa-moon"></i>moonmatt</a></p>
+        </div>
+                <div class="footer__content__right">
+            <a href="https://twitter.com/mooonmatt"><ul><i class="fab fa-twitter"></i></ul></a>
+            <a href="https://github.com/moonmatt/Mogi"><ul><i class="fab fa-github"></i></ul></a>
+        </div>
+        </div>
+    </div>
 
+
+
+<script>
+function load() {
+    var checked = JSON.parse(localStorage.getItem('checkbox'));
+    document.getElementById("checkbox").checked = checked;
+}
+function save() {
+    var checkb = document.getElementById('checkbox');
+    localStorage.setItem('checkbox', checkbox.checked);
+}
+function updateTheme() {
+    var checkBox = document.getElementById("checkbox");
+    if(checkBox.checked) { 
+        swapStyleSheet('css/dark.css') 
+        save();
+    } else {
+        swapStyleSheet('css/light.css')
+        save();
+   } 
+}
+load();
+updateTheme();
+    </script>
 </body>
-</html>
